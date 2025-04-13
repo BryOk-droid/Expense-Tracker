@@ -1,0 +1,323 @@
+.header-section {
+ text-align: left;
+ margin-bottom: 30px;
+}
+
+
+.app-title {
+ font-size: 2rem;
+ color: var(--text-color);
+ font-weight: 600;
+ margin-bottom: 8px;
+}
+
+
+.app-subtitle {
+ color: #64748b;
+ font-size: 1rem;
+ margin: 0;
+ line-height: 1.5;
+}
+
+
+:root {
+ --primary-color: #4f46e5;
+ --border-color: #e5e7eb;
+ --text-color: #111827;
+ --light-bg: #f9fafb;
+}
+
+
+body {
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+ background-color: #f8fafc;
+ color: var(--text-color);
+ margin: 0;
+ padding: 20px;
+}
+
+
+.app-container {
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+
+
+
+.app-content {
+ display: flex;
+ gap: 30px;
+}
+
+
+.form-section {
+ flex: 1;
+ min-width: 350px;
+ max-width: 400px;
+ background: white;
+ padding: 25px;
+ border-radius: 10px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ box-sizing: border-box;
+}
+
+
+.table-section {
+ flex: 2;
+ background: white;
+ padding: 25px;
+ border-radius: 10px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ box-sizing: border-box;
+ overflow-x: auto;
+}
+
+
+.expense-form-container {
+ width: 100%;
+}
+
+
+.expense-form-container h2 {
+ font-size: 1.25rem;
+ margin-bottom: 1rem;
+ color: var(--text-color);
+ font-weight: 600;
+}
+
+
+.form-instruction {
+ color: #64748b;
+ font-size: 0.875rem;
+ margin-bottom: 1.5rem;
+}
+
+
+.form-field {
+ margin-bottom: 1.25rem;
+ width: 100%;
+ box-sizing: border-box;
+ position: relative;
+}
+
+
+.form-field input,
+.form-field select {
+ width: 100%;
+ padding: 12px 15px;
+ border: 1px solid #e2e8f0;
+ border-radius: 8px;
+ font-size: 14px;
+ background-color: white;
+ transition: border-color 0.2s;
+ box-sizing: border-box;
+}
+
+
+.form-field input:focus,
+.form-field select:focus {
+ outline: none;
+ border-color: var(--primary-color);
+ box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+
+.form-field input::placeholder {
+ color: #94a3b8;
+}
+
+
+.form-field select {
+ appearance: none;
+ background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+ background-repeat: no-repeat;
+ background-position: right 12px center;
+ background-size: 16px;
+ color: #94a3b8;
+}
+
+
+.form-field select:valid {
+ color: var(--text-color);
+}
+
+
+.date-input-wrapper {
+ position: relative;
+}
+
+
+.date-placeholder {
+ position: absolute;
+ left: 15px;
+ top: 50%;
+ transform: translateY(-50%);
+ color: #94a3b8;
+ pointer-events: none;
+ z-index: 1;
+ font-size: 14px;
+}
+
+
+.date-input {
+ position: relative;
+ z-index: 2;
+ background-color: transparent;
+}
+
+
+.add-btn {
+ background-color: var(--primary-color);
+ color: white;
+ border: none;
+ padding: 12px;
+ border-radius: 8px;
+ font-size: 0.875rem;
+ font-weight: 500;
+ width: 100%;
+ cursor: pointer;
+ margin-top: 10px;
+ transition: background-color 0.2s;
+ box-sizing: border-box;
+}
+
+
+.add-btn:hover {
+ background-color: #4338ca;
+}
+
+
+.search-bar {
+ margin-bottom: 20px;
+ width: 100%;
+}
+
+
+.search-bar input {
+ width: 100%;
+ padding: 12px 15px;
+ border: 1px solid #e2e8f0;
+ border-radius: 8px;
+ font-size: 14px;
+ background-color: white;
+ box-sizing: border-box;
+}
+
+
+.search-bar input:focus {
+ outline: none;
+ border-color: var(--primary-color);
+ box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+
+.search-bar input::placeholder {
+ color: #94a3b8;
+}
+
+
+.expense-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 1rem;
+ table-layout: fixed;
+}
+
+
+.expense-table th {
+ background-color: var(--light-bg);
+ padding: 12px 15px;
+ text-align: left;
+ font-weight: 600;
+ font-size: 0.75rem;
+ color: #64748b;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ border-bottom: 1px solid var(--border-color);
+}
+
+
+.expense-table td {
+ padding: 12px 15px;
+ border-bottom: 1px solid var(--border-color);
+ font-size: 0.875rem;
+ word-wrap: break-word;
+}
+
+
+.expense-table tr:last-child td {
+ border-bottom: none;
+}
+
+
+.expense-table th:nth-child(1),
+.expense-table td:nth-child(1) {
+ width: 15%;
+}
+
+
+.expense-table th:nth-child(2),
+.expense-table td:nth-child(2) {
+ width: 25%;
+}
+
+
+.expense-table th:nth-child(3),
+.expense-table td:nth-child(3) {
+ width: 10%;
+}
+
+
+.expense-table th:nth-child(4),
+.expense-table td:nth-child(4) {
+ width: 15%;
+}
+
+
+.expense-table th:nth-child(5),
+.expense-table td:nth-child(5) {
+ width: 15%;
+}
+
+
+.expense-table th:nth-child(6),
+.expense-table td:nth-child(6) {
+ width: 20%;
+}
+
+
+.delete-btn {
+ background-color: #ef4444;
+ color: white;
+ border: none;
+ padding: 8px 12px;
+ border-radius: 6px;
+ font-size: 0.75rem;
+ font-weight: 500;
+ cursor: pointer;
+ transition: background-color 0.2s;
+}
+
+
+.delete-btn:hover {
+ background-color: #dc2626;
+}
+
+@media (max-width: 768px) {
+ .app-content {
+   flex-direction: column;
+ }
+
+
+ .form-section,
+ .table-section {
+   width: 100%;
+   max-width: 100%;
+ }
+
+
+ .app-title {
+   font-size: 1.5rem;
+ }
+}
