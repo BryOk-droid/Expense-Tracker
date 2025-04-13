@@ -1,0 +1,35 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+#root {
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+
+
+button {
+ background: none;
+ border: none;
+ padding: 0;
+ margin: 0;
+ cursor: pointer;
+ font-family: inherit;
+}
+
+
+ul, ol {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
