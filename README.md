@@ -23,7 +23,7 @@ A simple, intuitive web application to track your expenses and manage personal f
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/bryok-droid/Expense-Tracker.git
+git clone https://github.com/BryOk-droid/Expense-Tracker.git
 ```
 
 2. Install dependencies:
