@@ -39,7 +39,7 @@ npm run dev
 ## Deployment
 
 This project is automatically deployed to GitHub Pages. The live version can be accessed at:  
-(https://bryok-droid.github.io/Expense-Tracker/](https://bryok-droid.github.io/Expense-Tracker/)
+(https://BryOk-droid.github.io/Expense-Tracker/)
 
 To deploy manually:
 ```bash
